@@ -4,7 +4,8 @@
 <body><header><h1>プライバシーポリシー</h1><nav><a href="./">ホーム</a><a href="privacy.html">プライバシーポリシー</a><a href="terms.html">利用条件</a></nav></header><main>
 <p>このページは、運営者本人だけが使う「くすりのひみつ」投稿ツールと、この説明サイトでの情報の扱いを説明します。一般の方のログインやアカウント接続は受け付けません。</p>
 <p>現在の Instagram 投稿では、運営者が用意した完成動画・タイトル・説明文、対象アカウントの識別情報、投稿の重複を避けるための記録、Instagram 連携用の認証情報を扱います。完成 MP4 は Instagram に渡すため公開 GitHub リポジトリに置かれ、誰でもアクセスできます。認証情報は非公開の GitHub Actions Secrets で管理し、公開サイトや公開リポジトリには載せません。</p>
-<p>YouTube Data API による連携は準備中です。このツールは現時点で YouTube API データを取得・保存していません。YouTube 接続を開始する前に、取得する項目、保存期間、失効・削除時の処理を定めて、このページを更新します。</p>
+<p>YouTube Data API による連携は準備中です。このツールは現時点で YouTube API データを取得・保存していません。</p>
+<p>YouTubeへの投稿時に、対象チャンネルを確認し、運営者が指定した動画・タイトル・説明文・公開範囲を送信します。APIから返るチャンネル情報、動画ID、投稿状態は実行中のメモリ内だけで扱い、Git履歴や実行ログには保存しません。重複防止には、運営者が用意したエピソードID・動画の照合値・公開範囲・投稿試行の有無を保存します。認証情報は非公開のGitHub Actions Secretsで管理します。投稿しない日も認証の有効性を確認し、失効が判明した場合は自動投稿を停止します。解除は連絡先への依頼、またはGoogleアカウント設定から行えます。こちらでトークン失効や保存した認証情報の削除を行う場合は、実行前に運営者へ確認します。連携解除だけでは公開済み動画や元の動画ファイルは削除されません。</p>
 <p>運営者が用意した動画、説明文および Instagram の投稿記録は、継続する投稿運用に必要な間、運営者が管理します。運営者が削除する場合、該当する管理ファイルを確認して削除します。削除については <a href="mailto:futari.mirror@gmail.com">futari.mirror@gmail.com</a> に連絡できます。公開済みの動画をプラットフォームから消す場合は、Instagram または YouTube でも別途削除が必要です。Google 連携の許可は <a href="https://security.google.com/settings/security/permissions">Google アカウントのセキュリティ設定</a> から解除できます。許可の解除だけで公開済み動画や管理ファイルが自動で削除されるわけではありません。</p>
 <p>このサイト自体は閲覧者の健康情報や診療情報を収集しません。GitHub Pages および GitHub 上の公開動画を閲覧すると、GitHub がアクセスに関する情報を処理する場合があります。GitHub 等の外部サービスのログやバックアップは、それぞれのサービスの管理対象です。<a href="https://docs.github.com/site-policy/privacy-policies/github-privacy-statement">GitHub プライバシーステートメント</a>も参照してください。</p>
 <p>このツールは YouTube API Services を利用する準備をしています。<a href="https://policies.google.com/privacy">Google プライバシーポリシー</a>および<a href="https://www.youtube.com/t/terms">YouTube 利用規約</a>を参照してください。問い合わせ先：<a href="mailto:futari.mirror@gmail.com">futari.mirror@gmail.com</a>。</p>
